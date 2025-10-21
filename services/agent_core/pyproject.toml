@@ -1,0 +1,10 @@
+[project]
+name = "agent_core"
+version = "0.1.0"
+dependencies = [
+    "langchain[openai,google-vertexai,google-genai,anthropic,aws,ollama]",
+    "lib_shared"
+]
+
+[tool.uv.sources]
+lib_shared = { workspace = true }

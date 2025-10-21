@@ -1,0 +1,17 @@
+[project]
+name = "family-attache-devtools"
+version = "0.1.0"
+# These are your repo-wide tools
+dependencies = [
+    "ruff",
+    "black",
+    "mypy",
+    "pytest",
+    "pre-commit"
+]
+
+[tool.uv.workspace]
+members = [
+    "services/*",
+    "lib/shared"
+]
