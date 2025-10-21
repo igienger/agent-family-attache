@@ -1,0 +1,34 @@
+// .vscode/settings.json
+{
+  // -----------------
+  // Python Settings
+  // -----------------
+
+  // Set the default path to your uv environment.
+  // This helps VSCode find it on launch.
+  "python.defaultInterpreterPath": ".venv/bin/python",
+
+  // Turn OFF basic linters, as Ruff handles all of it.
+  "python.linting.enabled": false,
+
+  // Turn OFF basic type checking, as MyPy extension handles it.
+  "python.analysis.typeCheckingMode": "off",
+
+  // -----------------
+  // Ruff Settings (Linting & Formatting)
+  // -----------------
+
+  // Set Ruff as the default formatter for Python files.
+  // It will use 'ruff format', which is 'black'-compatible.
+  "editor.defaultFormatter": "charliermarsh.ruff",
+
+  // Format the file on save.
+  "editor.formatOnSave": true,
+
+  // Run 'fix all' and 'organize imports' on save.
+  // This automatically cleans up your code.
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ruff": "explicit",
+    "source.organizeImports.ruff": "explicit"
+  }
+}
