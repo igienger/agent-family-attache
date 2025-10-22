@@ -1,0 +1,8 @@
+[project]
+name = "lib_infisical"
+version = "0.1.0"
+dependencies = [
+    "infisicalsdk",
+    "pydantic",
+    "pydantic-settings"
+]

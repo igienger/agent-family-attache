@@ -10,13 +10,17 @@ dev = [
     "black",
     "mypy",
     "pytest",
-    "pre-commit"
+    "pre-commit",
+    "lib_infisical"
 ]
+
+[tool.uv.sources]
+lib_infisical = { workspace = true }
 
 [tool.uv.workspace]
 members = [
     "services/*",
-    "lib/shared"
+    "shared/*"
 ]
 
 [tool.black]

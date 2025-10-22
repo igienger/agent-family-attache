@@ -1,6 +1,0 @@
-[project]
-name = "lib_shared"
-version = "0.1.0"
-dependencies = [
-    "pydantic" # For your data models
-]
