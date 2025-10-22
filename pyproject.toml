@@ -48,6 +48,9 @@ select = ["E", "W", "F", "I", "UP"]
 # Specify Python version
 python_version = "3.11"
 
+# Plugin to enable Pydantic's extra type capabilities
+plugins = ['pydantic.mypy']
+
 # --- Recommended Strictness Flags ---
 warn_return_any = true
 warn_unused_ignores = true
