@@ -1,8 +1,11 @@
 [project]
 name = "family-attache-devtools"
 version = "0.1.0"
-# These are your repo-wide tools
-dependencies = [
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = [
     "ruff",
     "black",
     "mypy",
@@ -15,3 +18,37 @@ members = [
     "services/*",
     "lib/shared"
 ]
+
+[tool.black]
+# The line length that black enforces.
+line-length = 88
+# Target Python versions.
+target-version = ['py311']
+
+[tool.ruff]
+# Set the same line length as black.
+line-length = 88
+# Specify the minimum Python version to target.
+target-version = "py311"
+
+[tool.ruff.lint]
+# Enable a broad set of useful rules:
+# E = pycodestyle Errors
+# W = pycodestyle Warnings
+# F = Pyflakes
+# I = isort (import sorting)
+# UP = pyupgrade (modernize code)
+select = ["E", "W", "F", "I", "UP"]
+
+[tool.mypy]
+# Specify Python version
+python_version = "3.11"
+
+# --- Recommended Strictness Flags ---
+warn_return_any = true
+warn_unused_ignores = true
+
+# --- Imports ---
+# This is crucial for working with libraries that don't have
+# complete type hints (e.g., pandas, numpy).
+ignore_missing_imports = true
