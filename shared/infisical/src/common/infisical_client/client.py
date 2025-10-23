@@ -1,7 +1,7 @@
 import functools
 import logging
 
-from common.clients import NamespaceWrapper
+from common.client_utils import NamespaceWrapper
 from infisical_sdk import InfisicalSDKClient
 from pydantic import model_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict

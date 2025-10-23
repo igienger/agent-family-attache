@@ -15,7 +15,6 @@ VALID_API_SETTINGS = ApiSettings(
     INFISICAL_CLIENT_SECRET=SecretStr("secret"),
 )
 
-
 # --- Tests for ClientSettings ---
 
 
