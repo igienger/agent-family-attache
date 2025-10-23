@@ -6,3 +6,6 @@ dependencies = [
     "pydantic",
     "pydantic-settings"
 ]
+
+[tool.uv]
+package = true # Indicate this is a package
