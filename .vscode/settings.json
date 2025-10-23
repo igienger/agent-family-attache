@@ -8,15 +8,20 @@
   // This helps VSCode find it on launch.
   "python.defaultInterpreterPath": ".venv/bin/python",
 
-  // Turn OFF basic linters, as Ruff handles all of it.
-  "python.linting.enabled": false,
-
   // Turn OFF basic type checking, as MyPy extension handles it.
   "python.analysis.typeCheckingMode": "off",
+
+  // TODO: See if we can get rid of this by using multi-root VSCode.
+  // "python.analysis.extraPaths": [
+  //   "./**/src"
+  // ],
 
   // -----------------
   // Ruff Settings (Linting & Formatting)
   // -----------------
+
+  // Turn OFF basic linters, as Ruff handles all of it.
+  "python.linting.enabled": false,
 
   // Set Ruff as the default formatter for Python files.
   // It will use 'ruff format', which is 'black'-compatible.

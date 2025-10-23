@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../shared/infisical"
+		},
+		{
+			"path": "../services/agent_core"
+		},
+		{
+			"path": "../services/web_ui"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+			// These are "sub-projects" with their own VSCode root.
+			"files.exclude": {
+				"shared/infisical": true,
+				"services/agent_core": true,
+				"services/web_ui": true,
+			},
+	}
+}
