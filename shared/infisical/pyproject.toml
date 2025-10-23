@@ -3,9 +3,18 @@ name = "lib_infisical"
 version = "0.1.0"
 dependencies = [
     "infisicalsdk",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "black",
+    "mypy",
+    "pytest",
+    "pytest-cov",
     "pydantic",
     "pydantic-settings"
 ]
 
 [tool.uv]
-package = true # Indicate this is a package
+package = true

@@ -3,8 +3,8 @@ name = "agent_core"
 version = "0.1.0"
 dependencies = [
     "langchain[openai,google-vertexai,google-genai,anthropic,aws,ollama]",
-    "lib_shared"
+    "lib_infisical"
 ]
 
 [tool.uv.sources]
-lib_shared = { workspace = true }
+lib_infisical = { workspace = true }
