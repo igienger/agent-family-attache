@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 
 
 class ClientSettings(BaseSettings):
-    model_config = SettingsConfigDict(case_sensitive=True)
+    model_config = SettingsConfigDict()
 
     @model_validator(mode="after")
     def validate_auth_method(self) -> "ClientSettings":

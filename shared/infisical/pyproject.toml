@@ -3,6 +3,7 @@ name = "lib_infisical"
 version = "0.1.0"
 dependencies = [
     "infisicalsdk",
+    "pydantic-settings",
 ]
 
 [dependency-groups]
@@ -12,8 +13,6 @@ dev = [
     "mypy",
     "pytest",
     "pytest-cov",
-    "pydantic",
-    "pydantic-settings"
 ]
 
 [tool.uv]

@@ -1,5 +1,5 @@
 from pydantic import HttpUrl, SecretStr
-from pydantic_settings import BaseSettings, SettingsConfigDict
+from pydantic_settings import BaseSettings
 
 
 class ApiSettings(BaseSettings):
@@ -9,5 +9,3 @@ class ApiSettings(BaseSettings):
     # Auth Method: Universal Auth
     INFISICAL_CLIENT_ID: str
     INFISICAL_CLIENT_SECRET: SecretStr
-
-    model_config = SettingsConfigDict(case_sensitive=True)

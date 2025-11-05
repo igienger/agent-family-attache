@@ -413,8 +413,18 @@ dependencies = [
     { name = "google-api-python-client" },
     { name = "google-auth-httplib2" },
     { name = "google-auth-oauthlib" },
+    { name = "lib-infisical" },
     { name = "pydantic" },
     { name = "requests" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "black" },
+    { name = "mypy" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "ruff" },
 ]
 
 [package.metadata]
@@ -422,8 +432,18 @@ requires-dist = [
     { name = "google-api-python-client", specifier = ">=2.185.0" },
     { name = "google-auth-httplib2", specifier = ">=0.2.0" },
     { name = "google-auth-oauthlib", specifier = ">=1.2.2" },
+    { name = "lib-infisical", editable = "shared/infisical" },
     { name = "pydantic" },
     { name = "requests" },
+]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "black" },
+    { name = "mypy" },
+    { name = "pytest" },
+    { name = "pytest-cov" },
+    { name = "ruff" },
 ]
 
 [[package]]
@@ -1325,28 +1345,28 @@ version = "0.1.0"
 source = { editable = "shared/infisical" }
 dependencies = [
     { name = "infisicalsdk" },
+    { name = "pydantic-settings" },
 ]
 
 [package.dev-dependencies]
 dev = [
     { name = "black" },
     { name = "mypy" },
-    { name = "pydantic" },
-    { name = "pydantic-settings" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "ruff" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "infisicalsdk" }]
+requires-dist = [
+    { name = "infisicalsdk" },
+    { name = "pydantic-settings" },
+]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "black" },
     { name = "mypy" },
-    { name = "pydantic" },
-    { name = "pydantic-settings" },
     { name = "pytest" },
     { name = "pytest-cov" },
     { name = "ruff" },
