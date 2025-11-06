@@ -1,3 +1,16 @@
+# Global .gitignore file for entire repository
+
+#################################################
+#            Operating System Files             #
+#################################################
+
+# General MacOS files
+.DS_Store
+
+#################################################
+#                 Python Files                  #
+#################################################
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
