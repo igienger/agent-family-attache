@@ -1,0 +1,35 @@
+{
+  // Turn OFF basic type checking, as MyPy extension handles it.
+  "python.analysis.typeCheckingMode": "off",
+
+  // For Pylance/IntelliSense to find modules in the root directory
+  "python.analysis.extraPaths": ["${workspaceFolder}/src"],
+
+  // -----------------
+  // Ruff Settings (Linting & Formatting)
+  // -----------------
+
+  // Turn OFF basic linters, as Ruff handles all of it.
+  "python.linting.enabled": false,
+
+  // Set Ruff as the default formatter for Python files.
+  "editor.defaultFormatter": "charliermarsh.ruff",
+
+  // Format the file on save.
+  "editor.formatOnSave": true,
+
+  // Run 'fix all' and 'organize imports' on save.
+  // This automatically cleans up your code.
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ruff": "explicit",
+    "source.organizeImports.ruff": "explicit"
+  },
+
+  // Testing settings
+  "python.testing.pytestArgs": [
+    "../tests"
+  ],
+  "python.testing.cwd": "${workspaceFolder}/src",
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+}
