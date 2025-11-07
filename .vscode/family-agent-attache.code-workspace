@@ -1,6 +1,9 @@
 {
 	"folders": [
 		{
+			"path": ".."
+		},
+		{
 			"path": "../shared/infisical"
 		},
 		{
@@ -10,7 +13,7 @@
 			"path": "../services/web_ui"
 		},
 		{
-			"path": ".."
+			"path": "../services/data_connectors"
 		}
 	],
 	"settings": {
@@ -19,6 +22,7 @@
 				"shared/infisical": true,
 				"services/agent_core": true,
 				"services/web_ui": true,
+				"services/data_connectors": true
 			},
 	}
 }
