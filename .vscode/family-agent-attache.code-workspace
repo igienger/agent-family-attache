@@ -14,7 +14,9 @@
 		},
 		{
 			"path": "../services/data_connectors"
-		}
+		},{
+			"path": "../services/mcp_server"
+		},
 	],
 	"settings": {
 			// These are "sub-projects" with their own VSCode root.
@@ -22,7 +24,8 @@
 				"shared/infisical": true,
 				"services/agent_core": true,
 				"services/web_ui": true,
-				"services/data_connectors": true
+				"services/data_connectors": true,
+				"services/mcp_server": true
 			},
 	}
 }
